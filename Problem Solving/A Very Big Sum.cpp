@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    long arr[1002],sum=0;
+    long arr[1002], sum=0;
     int n,i;
 
     cin>>n;
