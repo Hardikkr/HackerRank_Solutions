@@ -6,4 +6,4 @@ for i in range(n):
     marks = list(map(float, inputArray[1:]))
     query[inputArray[0]] = sum(marks)/float(len(marks))
 
-print("%.2f" % query[input()]) # print(output) formatted to 2 decimal places
+print("%.2f" % query[input()])
