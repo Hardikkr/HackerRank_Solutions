@@ -4,19 +4,16 @@
 #include <stdlib.h>
 
 int main() {
-	
-    int n;
+    
+    int n, sum=0;
     scanf("%d", &n);
-    int digit, temp, sum = 0;
-    temp = n;
-    while(temp > 0)
-    {
-        digit = temp % 10;
-        sum = sum + digit;
-        temp = temp / 10;
+
+    while(n!=0){
+        sum += n%10;
+        n = n/10;
     }
-    printf("%d\n",sum);
+
+    printf("%d", sum);
+
     return 0;
 }
-
-
