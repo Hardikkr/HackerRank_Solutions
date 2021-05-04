@@ -1,0 +1,9 @@
+#!/bin/bash
+read num
+sum=0
+for i in `seq 1 $num`; do
+    read temp
+    sum=$(($sum+$temp))
+done
+avg=$sum/$num
+echo $avg | bc -l | xargs printf "%.3f"
